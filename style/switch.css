@@ -1,0 +1,33 @@
+.toggle-btn {
+  width: 60px;
+  height: 32px;
+  border-radius: 9999px;
+  background: #9ca3af;
+  border: 2px solid #111827;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+.toggle-btn .knob {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.dark .toggle-btn {
+  background: #111827;
+  border: 2px solid #9ca3af;
+}
+
+.dark .toggle-btn .knob {
+  transform: translate(28px, -50%);
+}
