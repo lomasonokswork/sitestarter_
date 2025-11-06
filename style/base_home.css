@@ -94,7 +94,11 @@ body {
   position: relative;
 }
 .nav_mid .link:not(:first-child)::after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
   position: absolute;
   left: -20px;
   top: 50%;
@@ -130,7 +134,11 @@ body {
 }
 
 .link::before {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
   position: absolute;
   width: 0;
   height: 2px;
@@ -321,11 +329,14 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
 .main1_right a {
   text-decoration: none;
   text-align: center;
 }
 
+=======
+>>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
 .features_section {
   width: 100%;
   max-width: 1200px;
@@ -333,7 +344,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+<<<<<<< HEAD
   font-family: "Poppins", sans-serif;
+=======
+  font-family: 'Poppins', sans-serif;
+>>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
 }
 
 .feature_card {
@@ -381,8 +396,11 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+<<<<<<< HEAD
   display: inline-block;
   text-decoration: none;
+=======
+>>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
 }
 
 .explore_button:hover {
