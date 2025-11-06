@@ -35,14 +35,10 @@
   --surface: #1e293b;
   --surface-hover: #334155;
 }
-<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
   background-color: var(--bg);
 }
-=======
-
->>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
 .main {
   height: 100vh;
   width: 100vw;
@@ -90,11 +86,7 @@ html {
   position: relative;
 }
 .nav_mid .link:not(:first-child)::after {
-<<<<<<< HEAD
   content: "";
-=======
-  content: '';
->>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
   position: absolute;
   left: -20px;
   top: 50%;
@@ -134,11 +126,7 @@ html {
 }
 
 .link::before {
-<<<<<<< HEAD
   content: "";
-=======
-  content: '';
->>>>>>> 8a9b47c8f83dcec33e9a3558e178ec408ce564c6
   position: absolute;
   width: 0;
   height: 2px;
