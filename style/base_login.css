@@ -7,9 +7,9 @@
   --navbar-bg: #ffffff;
   --navbar-text: #1e293b;
   --border: #e2e8f0;
-  --primary: #3b82f6;
-  --primary-light: #60a5fa;
-  --primary-dark: #2563eb;
+  --primary: rgb(111, 0, 255);
+  --primary-light: rgb(134, 41, 255);
+  --primary-dark: rgb(83, 0, 190);
   --accent: #8b5cf6;
   --success: #10b981;
   --warning: #f59e0b;
@@ -19,15 +19,15 @@
 }
 
 .dark {
-  --bg: #111827;
+  --bg: #0C1116;
   --text: #f8fafc;
   --text-secondary: #94a3b8;
-  --navbar-bg: #1e293b;
+  --navbar-bg: #000408;
   --navbar-text: #f1f5f9;
-  --border: #334155;
-  --primary: #60a5fa;
-  --primary-light: #93c5fd;
-  --primary-dark: #3b82f6;
+  --border: #3C454D;
+  --primary: rgb(111, 0, 255);
+  --primary-light: rgb(134, 41, 255);
+  --primary-dark: rgb(83, 0, 190);
   --accent: #a78bfa;
   --success: #34d399;
   --warning: #fbbf24;
@@ -296,7 +296,7 @@ input[type="password"]::placeholder {
 input[type="text"]:focus,
 input[type="password"]:focus {
   outline: none;
-  border-color: #60a5fa;
+  border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.06);
 }
 
@@ -318,13 +318,14 @@ input[type="password"]:focus {
   transition: ease-in-out 0.2s;
 }
 .btn:hover {
-  background-color: #1e40af;
+  background-color: var(--primary);
   transform: translateY(1px) scale(1.04);
   transition: ease-in-out 0.2s;
 }
 .btn:active {
   transform: translateY(1px) scale(0.96);
   transition: ease-in-out 0.1s;
+  background-color:var(--primary-dark);
 }
 
 @media (max-width: 850px) {

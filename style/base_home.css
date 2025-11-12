@@ -19,9 +19,9 @@ body {
   --navbar-bg: #ffffff;
   --navbar-text: #1e293b;
   --border: #e2e8f0;
-  --primary: #3b82f6;
-  --primary-light: #60a5fa;
-  --primary-dark: #2563eb;
+  --primary: rgb(111, 0, 255);
+  --primary-light: rgb(134, 41, 255);
+  --primary-dark: rgb(83, 0, 190);
   --accent: #8b5cf6;
   --success: #10b981;
   --warning: #f59e0b;
@@ -31,15 +31,15 @@ body {
 }
 
 .dark {
-  --bg: #111827;
+  --bg: #0C1116;
   --text: #f8fafc;
   --text-secondary: #94a3b8;
-  --navbar-bg: #1e293b;
+  --navbar-bg: #000408;
   --navbar-text: #f1f5f9;
-  --border: #334155;
-  --primary: #60a5fa;
-  --primary-light: #7cb3f1;
-  --primary-dark: #3b82f6;
+  --border: #3C454D;
+  --primary: rgb(111, 0, 255);
+  --primary-light: rgb(134, 41, 255);
+  --primary-dark: rgb(83, 0, 190);
   --accent: #a78bfa;
   --success: #34d399;
   --warning: #fbbf24;
@@ -66,7 +66,6 @@ body {
   top: 0;
   z-index: 1000;
   color: var(--navbar-text);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .nav_left {
   width: 20%;
@@ -380,7 +379,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(140, 59, 246, 0.2);
   display: inline-block;
   text-decoration: none;
 }
@@ -388,7 +387,7 @@ body {
 .explore_button:hover {
   transform: translateY(-2px);
   background-color: var(--primary-dark);
-  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 15px -3px rgba(131, 59, 246, 0.3);
 }
 
 @media (max-width: 1024px) {

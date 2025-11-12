@@ -35,7 +35,8 @@ $projects = $data['projects'];
         </button>
       </div>
     </div>
-    <div>
+    <div class="catalog">
+      <div class="catalog-projects">
       <?php
       foreach ($projects as $project) {
         echo "<h2>Project Name: {$project['name']}</h2>";
@@ -50,6 +51,7 @@ $projects = $data['projects'];
         echo "<hr>";
       }
       ?>
+      </div>
     </div>
   </div>
 </body>
