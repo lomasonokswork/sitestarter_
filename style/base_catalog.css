@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* {
+  outline: 1px solid red;
+}*/
+
 :root {
   --bg: #f8fafc;
   --text: #0f172a;
@@ -19,12 +23,12 @@
 }
 
 .dark {
-  --bg: #0C1116;
+  --bg: #0c1116;
   --text: #f8fafc;
   --text-secondary: #94a3b8;
   --navbar-bg: #000408;
   --navbar-text: #f1f5f9;
-  --border: #3C454D;
+  --border: #3c454d;
   --primary: rgb(111, 0, 255);
   --primary-light: rgb(134, 41, 255);
   --primary-dark: rgb(83, 0, 190);
@@ -38,6 +42,7 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--bg);
+  margin: 0px auto;
 }
 .main {
   height: 100vh;
@@ -223,33 +228,90 @@ html {
 .catalog {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 70%;
-  margin: 2rem auto;
-  padding: 1rem;
+  width: 100vw;
+  margin: 0px auto;
+  font-family: "Poppins", sans-serif;
   color: var(--text);
-  background-color: var(--navbar-bg);
-  font-family: 'Poppins', sans-serif;
-  border-radius: 8px;
-  border: 2px solid var(--border);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  overflow: hidden;
 }
 
 .catalog-projects {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 1rem 0.5rem;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-
+  margin: 0px;
+  padding: 20px;
 }
 
 .catalog-projects::-webkit-scrollbar {
   display: none;
+}
+
+.catalog-title {
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 7.5px;
+}
+.catalog-description {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 7.5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.catalog-steps {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  font-size: smaller;
+}
+
+.catalog-tags {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.catalog-languages {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.catalog-redirect {
+  margin: 0px;
+  padding: 0px;
+}
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: ease-in-out 0.2s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: var(--primary);
+  transform: translateY(1px) scale(1.04);
+  transition: ease-in-out 0.2s;
+}
+.btn:active {
+  transform: translateY(1px) scale(0.96);
+  transition: ease-in-out 0.1s;
+  background-color: var(--primary-dark);
 }

@@ -10,7 +10,7 @@ $projects = $data['projects'];
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Catalog</title>
   <link rel="stylesheet" href="style/base_catalog.css" />
   <link rel="stylesheet" href="style/switch.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -37,20 +37,20 @@ $projects = $data['projects'];
     </div>
     <div class="catalog">
       <div class="catalog-projects">
-      <?php
-      foreach ($projects as $project) {
-        echo "<h2>Project Name: {$project['name']}</h2>";
-        echo "<p>Description: {$project['description']}</p>";
-        echo "<p>Steps: " . implode("<br>", $project['steps']) . "</p>";
-        echo "<p>Tags: " . implode(", ", $project['tags']) . "</p>";
-        echo "<p>Languages: " . implode(", ", $project['lang']) . "</p>";
+        <?php
+        foreach ($projects as $project) {
+          echo "<div class='catalog-title'>Project Name: {$project['name']}</div>";
+          echo "<div class='catalog-description'>Description: {$project['description']}</div>";
+          echo '<div class="catalog-steps">Steps: ' . '<br>' . implode("<br>", $project['steps']) . "</div>";
+          echo '<div class="catalog-tags">Tags: ' . implode(", ", $project['tags']) . '</div>';
+          echo '<div class="catalog-languages">Languages: ' . implode(", ", $project['lang']) . "</div><br>";
 
-        for ($i = 0; $i < count($project['links']); $i++) {
-          echo "<a href='{$project['links'][$i]}'>{$project['linkNames'][$i]}</a><br>";
+          for ($i = 0; $i < count($project['links']); $i++) {
+            echo "<a class='btn' href='{$project['links'][$i]}'>{$project['linkNames'][$i]}</a><br><br>";
+          }
+          echo "<hr>";
         }
-        echo "<hr>";
-      }
-      ?>
+        ?>
       </div>
     </div>
   </div>
