@@ -12,16 +12,11 @@
         "Test the website for functionality and responsiveness.",
         "Publish your portfolio online."
       ],
-      "tags": [
-        "Creative",
-        "Beginner",
-        "Web Development",
-        "Personal Branding",
-        "Front-End Heavy"
-      ],
+      "tags": ["Creative", "Frontend", "Personal"],
       "lang": ["HTML", "CSS", "JavaScript"],
       "linkNames": ["Example"],
       "links": ["https://p5aholic.me/"],
+      "difficulty": "Beginner",
       "id": "1"
     },
     {
@@ -37,16 +32,11 @@
         "Test the app for different locations and edge cases.",
         "Deploy the app to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "API Integration",
-        "Front-End Heavy"
-      ],
+      "tags": ["API", "Frontend"],
       "lang": ["HTML", "CSS", "JavaScript", "JSON", "PHP"],
-      "linkNames": ["Example", "API Example"],
-      "links": ["https://www.ventusky.com/", "https://www.weatherapi.com/"],
+      "linkNames": ["Example"],
+      "links": ["https://www.ventusky.com/"],
+      "difficulty": "Intermediate",
       "id": "2"
     },
     {
@@ -61,16 +51,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Productivity"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://todoist.com/"],
+      "difficulty": "Intermediate",
       "id": "3"
     },
     {
@@ -85,16 +70,11 @@
         "Test the platform for usability and security.",
         "Deploy the platform to a hosting service."
       ],
-      "tags": [
-        "Technical",
-        "Advanced",
-        "Web Development",
-        "User Authentication",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Authentication", "Database"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://wordpress.com/"],
+      "difficulty": "Advanced",
       "id": "4"
     },
     {
@@ -109,16 +89,11 @@
         "Test the site for usability, security, and performance.",
         "Deploy the site to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Advanced",
-        "Web Development",
-        "E-commerce",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "E-commerce", "Payment"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.shopify.com/"],
+      "difficulty": "Advanced",
       "id": "5"
     },
     {
@@ -133,16 +108,11 @@
         "Test the application for usability and performance.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Advanced",
-        "Web Development",
-        "Real-Time Communication",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Real-time", "Authentication"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL", "WebSockets"],
       "linkNames": ["Example"],
       "links": ["https://socket.io/"],
+      "difficulty": "Advanced",
       "id": "6"
     },
     {
@@ -157,16 +127,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Lifestyle"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.allrecipes.com/"],
+      "difficulty": "Intermediate",
       "id": "7"
     },
     {
@@ -181,16 +146,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Health"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.myfitnesspal.com/"],
+      "difficulty": "Intermediate",
       "id": "8"
     },
     {
@@ -205,16 +165,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Productivity"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.eventbrite.com/"],
+      "difficulty": "Intermediate",
       "id": "9"
     },
     {
@@ -229,16 +184,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Lifestyle"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.lonelyplanet.com/"],
+      "difficulty": "Intermediate",
       "id": "10"
     },
     {
@@ -253,16 +203,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Education"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.duolingo.com/"],
+      "difficulty": "Intermediate",
       "id": "11"
     },
     {
@@ -277,16 +222,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Finance"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.mint.com/"],
+      "difficulty": "Intermediate",
       "id": "12"
     },
     {
@@ -301,16 +241,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Entertainment"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.netflix.com/"],
+      "difficulty": "Intermediate",
       "id": "13"
     },
     {
@@ -325,16 +260,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Advanced",
-        "Web Development",
-        "API Integration",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "API", "Analytics"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://hootsuite.com/"],
+      "difficulty": "Advanced",
       "id": "14"
     },
     {
@@ -349,16 +279,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Technical",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Education"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.kahoot.com/"],
+      "difficulty": "Intermediate",
       "id": "15"
     },
     {
@@ -373,16 +298,11 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": [
-        "Creative",
-        "Intermediate",
-        "Web Development",
-        "Data Management",
-        "Full-Stack"
-      ],
+      "tags": ["Fullstack", "Database", "Creative"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.saatchiart.com/"],
+      "difficulty": "Intermediate",
       "id": "16"
     }
   ]

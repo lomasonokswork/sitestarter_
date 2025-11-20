@@ -36,19 +36,22 @@ $projects = $data['projects'];
       </div>
     </div>
     <div class="catalog">
+      <div class="filters">placeholder</div>
       <div class="catalog-projects">
         <?php
         foreach ($projects as $project) {
-          echo "<div class='catalog-title'>Project Name: {$project['name']}</div>";
-          echo "<div class='catalog-description'>Description: {$project['description']}</div>";
-          echo '<div class="catalog-steps">Steps: ' . '<br>' . implode("<br>", $project['steps']) . "</div>";
-          echo '<div class="catalog-tags">Tags: ' . implode(", ", $project['tags']) . '</div>';
-          echo '<div class="catalog-languages">Languages: ' . implode(", ", $project['lang']) . "</div><br>";
+          echo "<div class='project'>";
+          echo "<div class='name'>{$project['name']}</div>";
+          echo "<div class='description'><div class='desc'>Description: <br></div>{$project['description']}</div>";
+          //echo '<div class="catalog-steps">Steps: ' . '<br>' . implode("<br>", $project['steps']) . "</div>";
+          echo '<div class="tags"><div class="tag">Tags: <br></div>' . implode(", ", $project['tags']) . '</div>';
+          echo '<div class="languages"><div class="lang">Languages: <br></div>' . implode(", ", $project['lang']) . "</div>";
+          echo "<div class='difficulty'><div class='diff'>Difficulty: </div>{$project['difficulty']}</div>";
 
           for ($i = 0; $i < count($project['links']); $i++) {
-            echo "<a class='btn' href='{$project['links'][$i]}'>{$project['linkNames'][$i]}</a><br><br>";
+            echo "<a class='btn' href='{$project['links'][$i]}'>{$project['linkNames'][$i]}</a>";
           }
-          echo "<hr>";
+          echo "</div>";
         }
         ?>
       </div>
