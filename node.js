@@ -12,3 +12,9 @@ const toggleBtn = document.getElementById('theme-toggle');
     localStorage.setItem('theme', dark ? 'dark' : 'light');
     toggleBtn.setAttribute('aria-pressed', dark);
   });
+
+  document.querySelectorAll('input[type="radio"]').forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        this.form.submit();
+      });
+    });

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,23 +13,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="icon" type="image/x-icon" href="/img/image.png">
     <script src="node.js" defer></script>
   </head>
   <body>
     <div class="main">
       <div class="navbar">
         <div class="nav_left">
-          <a class="link active" href="home.html">SiteStarter</a>
+          <a class="link active" href="home.php">SiteStarter</a>
         </div>
         <div class="nav_mid">
-          <a class="link" href="discover.html">Discover</a>
+          <a class="link" href="resources.php">Resources</a>
           <a class="link" href="catalog.php">Catalog</a>
-          <a class="link" href="saved.html">Saved</a>
+          <a class="link" href="saved.php">Saved</a>
         </div>
         <div class="nav_right">
-          <a class="link" href="login.html"
-            ><i class="fas fa-user"></i> Login</a
-          >
+          <?php if (!isset($_SESSION['user_id'])): ?>
+          <a class="link" href="login.php">
+            <i class="fas fa-user"></i> Login
+          </a>
+          <?php else: ?>
+            <a class="link" href="profile.php"><i class="fas fa-user">&nbsp</i><?php echo $_SESSION['username'];?><a>
+            <?php endif; ?>
           <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
             <span class="knob"></span>
           </button>

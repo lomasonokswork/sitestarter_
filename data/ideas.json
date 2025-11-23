@@ -12,11 +12,14 @@
         "Test the website for functionality and responsiveness.",
         "Publish your portfolio online."
       ],
-      "tags": ["Creative", "Frontend", "Personal"],
+      "tags": ["Creative", "Personal", "Frontend", "Beginner"],
       "lang": ["HTML", "CSS", "JavaScript"],
       "linkNames": ["Example"],
       "links": ["https://p5aholic.me/"],
       "difficulty": "Beginner",
+      "type": "Frontend",
+      "features": [],
+      "category": "Personal",
       "id": "1"
     },
     {
@@ -32,11 +35,14 @@
         "Test the app for different locations and edge cases.",
         "Deploy the app to a hosting platform."
       ],
-      "tags": ["API", "Frontend"],
+      "tags": ["API", "Frontend", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "JSON", "PHP"],
       "linkNames": ["Example"],
       "links": ["https://www.ventusky.com/"],
       "difficulty": "Intermediate",
+      "type": "Frontend",
+      "features": ["API"],
+      "category": "Lifestyle",
       "id": "2"
     },
     {
@@ -51,11 +57,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Productivity"],
+      "tags": ["Fullstack", "Database", "Productivity", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://todoist.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Productivity",
       "id": "3"
     },
     {
@@ -70,11 +79,14 @@
         "Test the platform for usability and security.",
         "Deploy the platform to a hosting service."
       ],
-      "tags": ["Fullstack", "Authentication", "Database"],
+      "tags": ["Fullstack", "Authentication", "Database", "Advanced"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://wordpress.com/"],
       "difficulty": "Advanced",
+      "type": "Fullstack",
+      "features": ["Authentication", "Database"],
+      "category": "Creative",
       "id": "4"
     },
     {
@@ -89,11 +101,14 @@
         "Test the site for usability, security, and performance.",
         "Deploy the site to a hosting platform."
       ],
-      "tags": ["Fullstack", "E-commerce", "Payment"],
+      "tags": ["Fullstack", "E-commerce", "Payment", "Database", "Authentication", "Advanced"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.shopify.com/"],
       "difficulty": "Advanced",
+      "type": "Fullstack",
+      "features": ["Database", "Authentication", "Payment"],
+      "category": "E-commerce",
       "id": "5"
     },
     {
@@ -108,11 +123,14 @@
         "Test the application for usability and performance.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Real-time", "Authentication"],
+      "tags": ["Fullstack", "Real-time", "Authentication", "Database", "Advanced"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL", "WebSockets"],
       "linkNames": ["Example"],
       "links": ["https://socket.io/"],
       "difficulty": "Advanced",
+      "type": "Fullstack",
+      "features": ["Real-time", "Authentication", "Database"],
+      "category": "Entertainment",
       "id": "6"
     },
     {
@@ -127,11 +145,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Lifestyle"],
+      "tags": ["Fullstack", "Database", "Lifestyle", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.allrecipes.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Lifestyle",
       "id": "7"
     },
     {
@@ -146,11 +167,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Health"],
+      "tags": ["Fullstack", "Database", "Analytics", "Health", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.myfitnesspal.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database", "Analytics"],
+      "category": "Health",
       "id": "8"
     },
     {
@@ -165,11 +189,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Productivity"],
+      "tags": ["Fullstack", "Database", "Productivity", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.eventbrite.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Productivity",
       "id": "9"
     },
     {
@@ -184,11 +211,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Lifestyle"],
+      "tags": ["Fullstack", "Database", "Lifestyle", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.lonelyplanet.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Lifestyle",
       "id": "10"
     },
     {
@@ -203,11 +233,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Education"],
+      "tags": ["Fullstack", "Database", "Education", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.duolingo.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Education",
       "id": "11"
     },
     {
@@ -222,11 +255,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Finance"],
+      "tags": ["Fullstack", "Database", "Analytics", "Finance", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.mint.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database", "Analytics"],
+      "category": "Finance",
       "id": "12"
     },
     {
@@ -241,11 +277,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Entertainment"],
+      "tags": ["Fullstack", "Database", "API", "Entertainment", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.netflix.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database", "API"],
+      "category": "Entertainment",
       "id": "13"
     },
     {
@@ -260,11 +299,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "API", "Analytics"],
+      "tags": ["Fullstack", "API", "Analytics", "Database", "Authentication", "Advanced"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://hootsuite.com/"],
       "difficulty": "Advanced",
+      "type": "Fullstack",
+      "features": ["API", "Analytics", "Database", "Authentication"],
+      "category": "Productivity",
       "id": "14"
     },
     {
@@ -279,11 +321,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Education"],
+      "tags": ["Fullstack", "Database", "Education", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.kahoot.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Education",
       "id": "15"
     },
     {
@@ -298,11 +343,14 @@
         "Test the application for usability and functionality.",
         "Deploy the application to a hosting platform."
       ],
-      "tags": ["Fullstack", "Database", "Creative"],
+      "tags": ["Fullstack", "Database", "Creative", "Intermediate"],
       "lang": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
       "linkNames": ["Example"],
       "links": ["https://www.saatchiart.com/"],
       "difficulty": "Intermediate",
+      "type": "Fullstack",
+      "features": ["Database"],
+      "category": "Creative",
       "id": "16"
     }
   ]
