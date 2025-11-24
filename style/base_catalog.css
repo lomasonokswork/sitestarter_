@@ -267,7 +267,7 @@ body {
 .catalog {
   display: flex;
   width: 100%;
-  min-height: calc(100vh - 10vh); /* Adjust based on navbar height */
+  min-height: calc(100vh - 10vh);
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: var(--text);
@@ -431,14 +431,18 @@ body {
   font-weight: 500;
   color: var(--text);
 }
-.tag, .lang, .diff {
+.tag,
+.lang,
+.diff {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text);
 }
-.tags, .languages, .difficulty {
+.tags,
+.languages,
+.difficulty {
   font-size: 0.8rem;
-  font-weight:475;
+  font-weight: 475;
   color: var(--text-secondary);
   font-style: italic;
 }
@@ -457,14 +461,14 @@ body {
   .catalog {
     flex-direction: column;
   }
-  
+
   .filters {
     width: 100%;
     position: relative;
     top: 0;
     margin: 20px;
   }
-  
+
   .catalog-projects {
     border-left: none;
     border-top: 2px solid var(--border);
@@ -477,7 +481,7 @@ body {
     grid-template-columns: 1fr;
     padding: 10px;
   }
-  
+
   .filters {
     margin: 10px;
     padding: 15px;

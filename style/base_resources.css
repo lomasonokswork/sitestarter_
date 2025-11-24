@@ -19,12 +19,12 @@
 }
 
 .dark {
-  --bg: #0C1116;
+  --bg: #0c1116;
   --text: #f8fafc;
   --text-secondary: #94a3b8;
   --navbar-bg: #000408;
   --navbar-text: #f1f5f9;
-  --border: #3C454D;
+  --border: #3c454d;
   --primary: rgb(111, 0, 255);
   --primary-light: rgb(134, 41, 255);
   --primary-dark: rgb(83, 0, 190);
@@ -35,11 +35,14 @@
   --surface: #1e293b;
   --surface-hover: #334155;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .main {
-  height: 100vh;
-  width: 100vw;
-  margin: -8px;
+  height: 100%;
+  width: 100%;
   background-color: var(--bg);
 }
 .navbar {
@@ -83,7 +86,7 @@
   position: relative;
 }
 .nav_mid .link:not(:first-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: 50%;
@@ -123,7 +126,7 @@
 }
 
 .link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -157,6 +160,57 @@
   background-color: var(--navbar-text);
 }
 
+.resources {
+  display: flex;
+  min-height: calc(100vh - 10vh);
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 15px;
+  margin: 0px;
+  border-right: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: hidden;
+}
+.sidebar-item {
+  height: 50px;
+  width: auto;
+  background-color: var(--surface);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-item:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 8px 16px 0px;
+  border-color: var(--primary);
+  background-color: var(--surface-hover);
+}
+.sidebar-item:active {
+  transform: translateY(0);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--primary);
+  color: #fff;
+}
 @media (max-width: 900px) {
   .navbar {
     flex-direction: row;
