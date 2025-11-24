@@ -450,7 +450,6 @@ body {
   display: none;
 }
 
-/* Responsive design */
 @media (max-width: 1200px) {
   .catalog-projects {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

@@ -69,7 +69,7 @@ foreach ($projects as $project) {
             <i class="fas fa-user"></i> Login
           </a>
           <?php else: ?>
-            <a class="link" href="profile.php"><i class="fas fa-user">&nbsp</i><?php echo $_SESSION['username'];?><a>
+            <a class="link" href="profile.php"><i class="fas fa-user">&nbsp</i><?php echo $_SESSION['username'];?></a>
             <?php endif; ?>
         <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
           <span class="knob"></span>
@@ -201,6 +201,7 @@ foreach ($projects as $project) {
           </div>
 
           <div class="filter-actions">
+            <button class="filter-btn apply-btn">Apply</button>
             <a href="catalog.php" class="filter-btn clear-btn">Clear</a>
           </div>
         </form>

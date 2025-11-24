@@ -19,12 +19,12 @@
 }
 
 .dark {
-  --bg: #0c1116;
+  --bg: #0C1116;
   --text: #f8fafc;
   --text-secondary: #94a3b8;
   --navbar-bg: #000408;
   --navbar-text: #f1f5f9;
-  --border: #3c454d;
+  --border: #3C454D;
   --primary: rgb(111, 0, 255);
   --primary-light: rgb(134, 41, 255);
   --primary-dark: rgb(83, 0, 190);
@@ -35,19 +35,20 @@
   --surface: #1e293b;
   --surface-hover: #334155;
 }
-body {
+body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 .main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  margin: 0px;
   background-color: var(--bg);
 }
 .navbar {
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--navbar-bg);
   border-bottom: 2px solid var(--border);
   display: flex;
@@ -59,7 +60,6 @@ body {
   overflow: hidden;
   color: var(--navbar-text);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  z-index: 1000;
 }
 .nav_left {
   width: 20%;
@@ -87,7 +87,7 @@ body {
   position: relative;
 }
 .nav_mid .link:not(:first-child)::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   top: 50%;
@@ -127,7 +127,7 @@ body {
 }
 
 .link::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -161,200 +161,60 @@ body {
   background-color: var(--navbar-text);
 }
 
-.resources {
-  display: flex;
-  min-height: 90vh;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  overflow: hidden;
-  margin: 0px;
+.profile {
+  width:100%;
+  min-height: calc(100vh-10vh);
+  padding-top: 15rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+  color: var(--text);
+  text-align: center;
 }
 
-.sidebar {
-  width: 20%;
-  padding: 15px;
-  margin: 0px;
-  border-right: 2px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  overflow-y: hidden;
-}
-.sidebar-item {
-  height: 50px;
-  width: 97.5%;
-  background-color: var(--surface);
-  font-size: 16px;
+.logout-btn {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
   font-weight: 600;
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: var(--text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(140, 59, 246, 0.2);
+  display: inline-block;
   text-decoration: none;
-  display: block;
-  cursor: pointer;
-  border: 1px solid var(--border);
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sidebar-item:hover {
-  transform: translateY(-4px);
-  box-shadow: rgba(99, 99, 99, 0.3) 0px 8px 16px 0px;
-  border-color: var(--primary);
-  background-color: var(--surface-hover);
-}
-.sidebar-item.active {
-  transform: translateY(0);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: var(--primary);
-  color: #fff;
 }
 
-.resources-main {
-  width: 80%;
-  padding: 20px;
-  margin: 0px;
-  overflow-y: auto;
-  font-size: 30px;
-}
-.info-box {
-  background-color: var(--surface);
-  border-left: 4px solid var(--primary);
-  padding: 1rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.font-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
-  align-content: start;
-}
-
-.font-item {
-  width: 45%;
-  height: auto;
-  padding: 20px;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  transition: all 0.3s ease;
-}
-
-.font-item:hover {
-  transform: translateY(-4px);
-  box-shadow: rgba(99, 99, 99, 0.3) 0px 8px 16px 0px;
-  border-color: var(--primary);
-  background-color: var(--surface-hover);
-}
-
-.font-title {
-  color: var(--text);
-}
-.font-title, .color-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.font-description {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  flex-grow: 1;
-}
-
-.copy-btn {
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  cursor: pointer;
-  background-color: var(--bg);
-  color: var(--text);
-  font-weight: 600;
-  font-size: 0.85rem;
-  transition: ease-in-out 0.2s;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.copy-btn:hover {
-  background-color: var(--primary);
-  color: white;
-  border-color: var(--primary);
-  transform: translateY(1px) scale(1.02);
-}
-
-.copy-btn:active {
-  transform: translateY(1px) scale(0.98);
+.logout-btn:hover {
+  transform: translateY(-2px);
   background-color: var(--primary-dark);
+  box-shadow: 0 10px 15px -3px rgba(131, 59, 246, 0.3);
 }
 
-.copy-btn i {
-  font-size: 0.9rem;
-}
-.copy-btn a {
-  text-decoration:none;
-  color: var(--text);
-}
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: var(--success);
-  color: white;
-  padding: 1rem 1.5rem;
+.delete-btn {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: red;
+  color: #ffffff;
+  border: none;
   border-radius: 8px;
+  font-size: 1.1rem;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transform: translateY(100px);
+  cursor: pointer;
   transition: all 0.3s ease;
-  pointer-events: none;
-  z-index: 2000;
+  box-shadow: 0 4px 6px -1px rgba(246, 59, 59, 0.2);
+  display: inline-block;
+  text-decoration: none;
 }
 
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
+.delete-btn:hover {
+  transform: translateY(-2px);
+  background-color: darkred;
+  box-shadow: 0 10px 15px -3px rgba(246, 59, 59, 0.3);
 }
 
-@media (max-width: 1200px) {
-  .font-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-}
-
-@media (max-width: 900px) {
-  .font-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .font-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .resources-main {
-    padding: 10px;
-  }
-}
 @media (max-width: 900px) {
   .navbar {
     flex-direction: row;
