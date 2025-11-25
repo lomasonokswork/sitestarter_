@@ -33,7 +33,7 @@ session_start();
             <i class="fas fa-user"></i> Login
           </a>
           <?php else: ?>
-            <a class="link" href="profile.php"><i class="fas fa-user">&nbsp</i><?php echo $_SESSION['username'];?><a>
+            <a class="link" href="profile.php"><i class="fas fa-user"></i><?php echo $_SESSION['username'];?><a>
             <?php endif; ?>
           <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
             <span class="knob"></span>

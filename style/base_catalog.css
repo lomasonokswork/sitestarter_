@@ -288,13 +288,58 @@ body {
 
 .filter-section {
   margin-bottom: 2rem;
+  justify-content:center;
 }
 
-.filter-section h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 0.75rem;
+.filter-section .filter-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.expand-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.expand-button:hover {
+  opacity: 0.7;
+}
+
+.expand-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: #9ca3af;
+  stroke-width: 2;
+  fill: none;
+  transition: transform 0.2s ease;
+}
+
+.expand-button.collapsed svg {
+  transform: rotate(180deg);
+}
+
+.filter-options {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.filter-options.collapsed {
+  max-height: 0;
+  opacity: 0;
 }
 
 .filter-options {
@@ -408,6 +453,7 @@ body {
   gap: 12px;
   transition: all 0.3s ease;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .project:hover {
@@ -416,8 +462,32 @@ body {
   border-color: var(--primary);
   background-color: var(--surface-hover);
 }
+.save-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 5px;
+}
+
+.save-btn:hover {
+  transform: scale(1.1);
+}
+
+.save-btn i.fas {
+  color: var(--accent-color, #8b5cf6);
+}
+
+.save-btn i.far {
+  color: var(--text-color, #666);
+}
+
 .name {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--text);
 }

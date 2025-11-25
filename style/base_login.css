@@ -253,13 +253,11 @@
   width: 50vw;
   background-color: var(--navbar-bg);
   margin-top: 15vh;
-  margin-left: 22.5vw;
-  margin-right: 22.5vw;
   border-radius: 7.5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 5vh;
   display: flex;
-  align-items: flex-start;
+  justify-self:center;
   border: solid 2px var(--border);
 }
 .login_L {

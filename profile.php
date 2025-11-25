@@ -40,7 +40,7 @@ session_start();
       </div>
     </div>
     <div class="profile">
-      <p>Welcome to your profile, <?php echo $_SESSION['username']; ?></p>
+      <p>Welcome to your profile, <?php echo $_SESSION['username']; ?>!</p>
       <button class="logout-btn" onclick="window.location.href='logout.php'">
         Log Out <i class="fas fa-arrow-right"></i>
       </button>
