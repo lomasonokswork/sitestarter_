@@ -27,7 +27,7 @@ if ($stmt->num_rows > 0) {
             if ($stmt->execute()) {
                 $_SESSION['user_id'] = $conn->insert_id;
                 $_SESSION['username'] = $username;
-                header("Location: home.php");
+                header("Location: index.php");
                 exit;
             } else {
                 $errors[] = "DB error: ".$conn->error;
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (password_verify($password, $hash)) {
                 $_SESSION['user_id'] = $id;
                 $_SESSION['username'] = $username;
-                header("Location: home.php");
+                header("Location: index.php");
                 exit;
             } else {
                 $errors[] = "Wrong credentials.";
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="main">
       <div class="navbar">
         <div class="nav_left">
-          <a class="link" href="home.php">SiteStarter</a>
+          <a class="link" href="index.php">SiteStarter</a>
         </div>
         <div class="nav_mid">
           <a class="link" href="resources.php">Resources</a>
@@ -90,11 +90,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="nav_right">
           <?php if (!isset($_SESSION['user_id'])): ?>
-          <a class="link" href="login.php">
+          <a class="link active" href="login.php">
             <i class="fas fa-user"></i> Login
           </a>
           <?php else: ?>
-            <a class="link" href="profile.php"><i class="fas fa-user">&nbsp</i><?php echo $_SESSION['username'];?><a>
+            <a class="link href="profile.php"><i class="fas fa-user"></i><?php if (isset($_SESSION['username'])) { echo "Profile"; }; ?></a>
             <?php endif; ?>
           <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
             <span class="knob"></span>

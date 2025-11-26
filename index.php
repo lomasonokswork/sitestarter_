@@ -20,7 +20,7 @@ session_start();
     <div class="main">
       <div class="navbar">
         <div class="nav_left">
-          <a class="link active" href="home.php">SiteStarter</a>
+          <a class="link active" href="index.php">SiteStarter</a>
         </div>
         <div class="nav_mid">
           <a class="link" href="resources.php">Resources</a>
@@ -30,10 +30,10 @@ session_start();
         <div class="nav_right">
           <?php if (!isset($_SESSION['user_id'])): ?>
           <a class="link" href="login.php">
-            <i class="fas fa-user"></i> Login
+            <i class="fas fa-user"></i>Login
           </a>
           <?php else: ?>
-            <a class="link" href="profile.php"><i class="fas fa-user"></i><?php echo $_SESSION['username'];?><a>
+            <a class="link" href="profile.php"><i class="fas fa-user"></i><?php if (isset($_SESSION['username'])) { echo "Profile"; }; ?></a>
             <?php endif; ?>
           <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
             <span class="knob"></span>

@@ -74,27 +74,27 @@ foreach ($savedProjectsList as $project) {
 <body>
   <div class="main">
     <div class="navbar">
-      <div class="nav_left">
-        <a class="link" href="home.php">SiteStarter</a>
-      </div>
-      <div class="nav_mid">
-        <a class="link" href="resources.php">Resources</a>
-        <a class="link" href="catalog.php">Catalog</a>
-        <a class="link active" href="saved.php">Saved</a>
-      </div>
-      <div class="nav_right">
-        <?php if (!isset($_SESSION['user_id'])): ?>
+        <div class="nav_left">
+          <a class="link" href="index.php">SiteStarter</a>
+        </div>
+        <div class="nav_mid">
+          <a class="link" href="resources.php">Resources</a>
+          <a class="link" href="catalog.php">Catalog</a>
+          <a class="link active" href="saved.php">Saved</a>
+        </div>
+        <div class="nav_right">
+          <?php if (!isset($_SESSION['user_id'])): ?>
           <a class="link" href="login.php">
             <i class="fas fa-user"></i> Login
           </a>
-        <?php else: ?>
-          <a class="link" href="profile.php"><i class="fas fa-user">&nbsp</i><?php echo $_SESSION['username']; ?></a>
+          <?php else: ?>
+            <a class="link" href="profile.php"><i class="fas fa-user"></i><?php if (isset($_SESSION['username'])) { echo "Profile"; }; ?></a>
             <?php endif; ?>
-            <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
-              <span class="knob"></span>
-            </button>
+          <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
+            <span class="knob"></span>
+          </button>
+        </div>
       </div>
-    </div>
     <div class="catalog">
       <div class="filters">
         <form method="GET" action="saved.php">
