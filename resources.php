@@ -75,7 +75,7 @@ else {
     <div class="font-items">
       <?php foreach ($fonts as $font) { ?>
         <div class="font-item">
-          <h3 class="font-title"><?php echo $font['name']; ?></h3>
+          <h3 class="font-title" style="font-family: <?php echo $font['stylename']; ?>"><?php echo $font['name']; ?></h3>
           <p class="font-description" style="font-family: <?php echo $font['stylename']; ?>">
             <?php echo $font['text']; ?>
           </p>
