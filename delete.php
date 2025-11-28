@@ -2,15 +2,17 @@
 session_start();
 $userId = $_SESSION['user_id'];
 
-$conn = new mysqli("localhost", "root", "", "user_auth");
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$dbPath = __DIR__ . '/user_auth.db';
+try {
+    $conn = new PDO('sqlite:' . $dbPath);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 
 $sql = "DELETE FROM users WHERE id = ?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $userId);
+$stmt->bindParam(1, $userId, PDO::PARAM_INT);
 
 if ($stmt->execute()) {
     session_destroy();
@@ -20,6 +22,6 @@ if ($stmt->execute()) {
     echo "Error deleting account.";
 }
 
-$stmt->close();
-$conn->close();
+$stmt = null;
+$conn = null;
 ?>

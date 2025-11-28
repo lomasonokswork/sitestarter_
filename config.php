@@ -1,12 +1,12 @@
 <?php
-$host = "localhost"; 
-$user = "root"; 
-$pass = ""; 
-$db   = "user_auth"; 
+$dbPath = __DIR__ . '/user_auth.db';
 
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+    $conn = new PDO('sqlite:' . $dbPath);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
+
+require_once __DIR__ . '/initialise_db.php';
 ?>
